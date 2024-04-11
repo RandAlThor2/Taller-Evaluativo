@@ -20,4 +20,8 @@ print("Size del array3D: ",array3D.size)
 print("Shape del array3D: ",array3D.shape)
 print("dtype del array3D: ",array3D.dtype)
 
+#4
+array2D = np.reshape(array3D,(300,100))
+print(np.shape(array2D))
+print(np.shape(array3D))
 
