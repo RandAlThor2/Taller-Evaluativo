@@ -14,3 +14,10 @@ array3D=array4D.copy()[:,:,:,0]
 print(np.size(array3D))
 print(np.size(array4D))
 
+#3 muestro las características de la matriz con las siguientes funciones:
+print("Dimensiones array3D: ",array3D.ndim)
+print("Size del array3D: ",array3D.size)
+print("Shape del array3D: ",array3D.shape)
+print("dtype del array3D: ",array3D.dtype)
+
+
