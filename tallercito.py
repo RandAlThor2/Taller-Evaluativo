@@ -34,4 +34,23 @@ def array_to_dataframe(array):
 
 array_to_dataframe(array2D)
 
+#6 
+
+def Cargar_Archivo(url):
+    if url.endswith(".mat"):
+        data = sio.loadmat(url)
+
+    elif url.endswith(".csv"):
+        data = pd.readcsv(url)
+
+    else:
+        raise ValueError("Formato de archivo no soportado")
+    
+    return data
+
+
+
+
+
+
 
