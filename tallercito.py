@@ -41,12 +41,34 @@ def Cargar_Archivo(url):
         data = sio.loadmat(url)
 
     elif url.endswith(".csv"):
-        data = pd.readcsv(url)
+        data = pd.read_csv(url)
 
     else:
         raise ValueError("Formato de archivo no soportado")
     
     return data
+
+#7
+def suma(array,eje):
+    return np.sum(array,axis=eje)
+    
+def resta(array,eje):
+    return np.subtract(array,axis=eje)
+    
+def producto(array,eje):
+    return np.product(array,axis=eje)
+
+def division(array,eje):
+    return np.divide(array,eje)
+
+def logaritmo(array):
+    return np.log(array)
+
+def promedio(array,eje):
+    return np.mean(array,axis=eje)
+
+def desviacion_est(array,eje):
+    return np.std(array,axis=eje)
 
 
 
