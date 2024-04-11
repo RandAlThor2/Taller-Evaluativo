@@ -1,5 +1,5 @@
 import numpy as np
-import pandas as pt
+import pandas as pd
 import matplotlib.pyplot as plt
 import scipy.io as sio
 
@@ -24,4 +24,14 @@ print("dtype del array3D: ",array3D.dtype)
 array2D = np.reshape(array3D,(300,100))
 print(np.shape(array2D))
 print(np.shape(array3D))
+
+#5
+
+def array_to_dataframe(array):
+    DataFrame = pd.DataFrame(array)
+    print(DataFrame)
+    return DataFrame
+
+array_to_dataframe(array2D)
+
 
